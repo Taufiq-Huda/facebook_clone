@@ -1,0 +1,44 @@
+.left {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+.logo {
+    fill: white;
+}
+
+.search {
+    border: 1px;
+    height: 40px;
+    width: 240px;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 8px;
+    background-color: #F0F2F5;
+}
+
+.search_icon {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    transition-duration: 0.3s;
+}
+
+.search_input{
+    border: 0;
+    position: fixed;
+    top: 20px;
+    background-color: red;
+    background-color: transparent;
+    margin-left: 2px;
+    transition-duration: 0.3s;
+}
+/* 
+.search input {
+} */
+
+/* .search_input :focus{
+    border: 5px;
+} */
