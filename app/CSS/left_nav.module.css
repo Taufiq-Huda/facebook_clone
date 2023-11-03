@@ -3,6 +3,15 @@
     flex-direction: row;
     width: 300px;
 }
+/* .search_input:focus~.search_icon{
+        width: 0px;
+    } */
+
+.left:focus-within>.search>.search_icon{
+    width: 0px;
+}
+
+
 
 .logo {
     fill: white;
@@ -35,10 +44,25 @@
     margin-left: 2px;
     transition-duration: 0.3s;
 }
-/* 
-.search input {
-} */
+.search_input:focus{
+    outline: none;
+}
+.arrow{
+    width: 0px;
+    height: 30px;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: currentColor;
+    /* z-index: top; */
+    /* transition-duration: 0.3s; */
+}
 
-/* .search_input :focus{
-    border: 5px;
-} */
+.left:focus-within>.icon>.arrow{
+    width: 40px;
+}
+
+.left:focus-within>.icon>svg:first-child{
+    width: 0px;
+}
+
+    /* outline: 3px solid red; */

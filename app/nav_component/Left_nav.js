@@ -7,25 +7,16 @@ export default function Left_nav() {
   const [searchfocused, setsearchfocused] = useState(false)
   const [showrecent, setshowrecent] = useState(false)
   const focusinput=(e)=>{
-    e.target.parentElement.lastChild.style.marginLeft="5px"
-    e.target.parentElement.firstChild.style.width="0px"
-    e.target.parentElement.parentElement.firstChild.firstChild.style.width="0px"
-    e.target.parentElement.parentElement.firstChild.lastChild.style.width="40px"
     setshowrecent(true)
   }
 
   const blurinput=(e)=>{
-    e.target.parentElement.lastChild.style.marginLeft="0px"
-    e.target.parentElement.firstChild.style.width="24px"
-    e.target.parentElement.parentElement.firstChild.firstChild.style.width="40px"
-    e.target.parentElement.parentElement.firstChild.lastChild.style.width="0px"
-    setshowrecent(true)
+    setshowrecent(false)
   }
-
 
   return (
     <div className={styles.left}>
-      <div>
+      <div className={styles.icon}>
         <svg  viewBox="0 0 36 36" fill="url(#:R1kjaj9emhpapd5aq:)"  height="40"  width="40">
           <defs>
           <linearGradient  x1="50%"  x2="50%"  y1="97.0782153%"  y2="0%"  id=":R1kjaj9emhpapd5aq:">
@@ -39,7 +30,12 @@ export default function Left_nav() {
           d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"
           ></path>
         </svg>
-        <svg height="40"  width="0"><path d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z" /></svg>
+        <svg className={styles.arrow} viewBox="0 0 20 20" >
+          <g transform="translate(-446 -350)">
+              <path d="M100.249 201.999a1 1 0 0 0-1.415-1.415l-5.208 5.209a1 1 0 0 0 0 1.414l5.208 5.209A1 1 0 0 0 100.25 211l-4.501-4.501 4.5-4.501z" transform="translate(355 153.5)"></path>
+              <path d="M107.666 205.5H94.855a1 1 0 1 0 0 2h12.813a1 1 0 1 0 0-2z" transform="translate(355 153.5)"></path>
+          </g>
+        </svg>
       </div>
       <div className={styles.search}>
           <svg className={styles.search_icon}>
