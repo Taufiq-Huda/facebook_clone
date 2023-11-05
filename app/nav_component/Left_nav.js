@@ -4,7 +4,6 @@ import styles from "../CSS/left_nav.module.css";
 import Recent_search from './Recent_search';
 
 export default function Left_nav() {
-  const [searchfocused, setsearchfocused] = useState(false)
   const [showrecent, setshowrecent] = useState(false)
   const focusinput=(e)=>{
     setshowrecent(true)

@@ -2,7 +2,7 @@ import React from "react";
 import NavComponent from "./NavComponent";
 import styles from "../CSS/navbar.module.css";
 import Left_nav from "./Left_nav";
-
+import Right_nav from "./Right_nav"
 
 function Navbar() {
   return (
@@ -14,7 +14,7 @@ function Navbar() {
         <NavComponent page="marketplace" />
         <NavComponent page=" " />
       </div>
-      <div className="settings"></div>
+      <Right_nav />
     </div>
   );
 }

@@ -2,15 +2,13 @@
     display: flex;
     flex-direction: row;
     width: 300px;
+    position: relative;
+    z-index: 200;
 }
-/* .search_input:focus~.search_icon{
-        width: 0px;
-    } */
 
 .left:focus-within>.search>.search_icon{
     width: 0px;
 }
-
 
 
 .logo {
@@ -24,6 +22,8 @@
     border-radius: 50px 50px 50px 50px;
     margin-left: 8px;
     background-color: #F0F2F5;
+    position: relative;
+    z-index: 300;
 }
 
 .search_icon {
@@ -53,6 +53,8 @@
     fill-rule: evenodd;
     clip-rule: evenodd;
     fill: currentColor;
+    position: relative;
+    z-index: 300;
     /* z-index: top; */
     /* transition-duration: 0.3s; */
 }
@@ -65,4 +67,3 @@
     width: 0px;
 }
 
-    /* outline: 3px solid red; */
