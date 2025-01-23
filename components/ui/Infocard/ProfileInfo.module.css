@@ -1,0 +1,60 @@
+:root{
+    --active-size : 10px;
+}
+
+.main{
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main:not(:has(.x:hover)):hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.dp{
+    height: 36px;
+    display: flex;
+}
+
+.dp>img{
+    border-radius: 100%;
+}
+
+.dp>span{ 
+    position: relative;
+    height: var(--active-size);
+    width: var(--active-size);
+    background-color: green;
+    right: var(--active-size);
+    top: calc(100% - var(--active-size) - 2px);
+    border-radius: 100%;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+.name{
+    margin: auto  0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.x{
+    color: white;
+    margin: auto 0;
+    padding: 4px;
+    border-radius: 100%;
+}
+
+.x:hover{
+    background-color: gray;
+}
