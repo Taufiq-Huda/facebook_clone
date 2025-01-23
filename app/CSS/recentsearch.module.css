@@ -1,0 +1,35 @@
+.card{
+    margin: 0px 0px 0px -300px;
+    width: 310px;
+    height: 520px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px black;
+    position: relative;
+    z-index: 250;
+    /* z-index: -1; */
+}
+.head{
+    margin: 57px 10px 0px 13px;
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head>span:last-child{
+    color: rgb(0,100,209);
+    font-weight: normal;
+}
+
+.suggesion{
+    height: 9%;
+    width: 96%;
+    margin: 2%;
+    /* padding: ; */
+    background-color: red;
+}
+
+.suggesion:hover{
+    background-color: black;
+}

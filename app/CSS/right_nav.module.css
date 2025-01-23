@@ -1,0 +1,54 @@
+.right {
+    display: flex;
+    flex-direction: row;
+    height: 44px;  /*pore thik korte hobe*/
+    width: 196px; /*pore thik korte hobe*/
+    /* overflow-y: visible; */
+    justify-content: space-evenly;
+}
+
+.icon{
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    /* padding-top: 20%; */
+}
+
+.nav{
+    min-height: 40px;
+    width: 40px;
+    background-color: #E4E6EB;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.hovertext{
+    position: unset;
+    background-color: red;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    /* z-index: -200; */
+    background-color: rgb(5,5,5);
+    color: white;
+    display: none;
+    /* margin-top: 100%; */
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+}
+.nav:hover+.hovertext{
+    display: block;
+}
+
+.nav:hover{
+    background-color: #d3d5d9;
+}

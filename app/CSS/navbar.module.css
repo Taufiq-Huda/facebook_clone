@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 16px;
+    height: 44px;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    position: sticky;
+    /* width: 100vw; */
+}
+
+.nevigate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
